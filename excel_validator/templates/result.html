@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validation Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Validation Results</h1>
+    <h3>Valid rows: {{ valid_count }}</h3>
+    <h3>Errors:</h3>
+    {% for error in errors %}
+        <p>{{ error }}</p>
+    {% endfor %}
+    <a href="/">Back to Home</a>
+</body>
+</html>

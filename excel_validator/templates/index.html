@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Excel Validator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Excel Validator</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label>Select Excel File:</label>
+        <input type="file" name="file" accept=".xlsx,.xls" required>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
